@@ -1,7 +1,16 @@
 {
   "hosting": {
+    "public": "dist",
+    "ignore": [
+      ".github",
+      "node_modules"
+    ],
     "appAssociation": "AUTO",
     "rewrites": [
+      {
+        "source": "/",
+        "destination": "/index.html"
+      },
       {
         "source": "/**",
         "dynamicLinks": true
